@@ -13,6 +13,13 @@
      panel = document.createElement('DIV');
     panel.innerHTML = JSON.stringify(window.Telegram.WebApp);
     document.body.appendChild(panel);
+    window.Telegram.BiometricManager.init(cb => {
+    panel = document.createElement('P');
+    panel.innerHTML = JSON.stringify(cb);
+    document.body.appendChild(panel);
+      
+    }
+      )
 
   </script>
 
